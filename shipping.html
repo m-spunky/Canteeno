@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h2 style="padding: 10px;">Shipping Information</h2>
+        <form class="checkout-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="floor">Floor</label>
+            <input type="text" id="floor" name="floor" required>
+            <label for="class_room">Class Room</label>
+            <input type="text" id="class_room" name="class_room" required>
+            <button type="submit" class="submit-order" onclick="order_placed()">Submit</button>
+        </form>
+    </section>
+    <script>
+        function order_placed() {
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('floor').value;
+            const class_room = document.getElementById('class_room').value;
+            
+            alert(`Thank you, ${name}! Your order will be shipped to ${address} Floor at ${class_room}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteeno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Canteeno.</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="navbar-link">Home</a></li>
+                <li><a href="#specials" class="navbar-link">Specials</a></li>
+                <li><a href="#menu" class="navbar-link">Menu</a></li>
+                <li><a href="#cart" class="navbar-link">Cart</a></li>
+                <li><a href="about.html" class="navbar-link">About Us</a></li>
+            </ul>
+            <a href="login.html" class="btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Eat Sleep And</h1>
+            <h2>Supper delicious Burger in town!</h2>
+            <p>Food is any substance consumed to provide nutritional support for an organism.</p>
+            <a href="#" class="btn">Book A Table</a>
+        </div>
+        <div class="burger-image">
+            <img src="./images/cta-banner.png" alt="Delicious Burger">
+        </div>
+    </section>
+
+    <div id="specials"><h1 style="text-align: center;">Today's Special!!!</h1></div>
+    <section class="menu-section">
+        <div class="menu-item">
+            <div class="menu-icon">
+                <img src="./images/promo-icon-1.svg" alt="Pizza Icon">
+            </div>
+            <h3>Mexican Pizza</h3>
+            <p>Food is any substance consumed to provide nutritional support for an organism.</p>
+            <div class="menu-image">
+                <img src="./images/food-menu-1.png" alt="Mexican Pizza">
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">
+                <img src="./images/promo-icon-2.svg" alt="Drinks Icon">
+            </div>
+            <h3>Soft Drinks</h3>
+            <p>Food is any substance consumed to provide nutritional support for an organism.</p>
+            <div class="menu-image">
+                <img src="./images/food-menu-2.png" alt="Soft Drinks">
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">
+                <img src="./images/promo-icon-3.svg" alt="Fries Icon">
+            </div>
+            <h3>French Fry</h3>
+            <p>Food is any substance consumed to provide nutritional support for an organism.</p>
+            <div class="menu-image">
+                <img src="./images/food-menu-3.png" alt="French Fry">
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">
+                <img src="./images/promo-icon-4.svg" alt="Burger Icon">
+            </div>
+            <h3>Burger Kingo</h3>
+            <p>Food is any substance consumed to provide nutritional support for an organism.</p>
+            <div class="menu-image">
+                <img src="./images/food-menu-4.png" alt="Burger Kingo">
+            </div>
+        </div>
+    </section>
+
+    <div id="menu"><h1 style="text-align: center;">Our Menu</h1></div>
+    <section class="products-section">
+        <div class="filter-buttons">
+            <button class="filter-button active">All</button>
+            <button class="filter-button">Pizza</button>
+            <button class="filter-button">Burger</button>
+            <button class="filter-button">Drinks</button>
+            <button class="filter-button">Sandwich</button>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="discount-tag">-15%</div>
+                <img src="./images/promo-1.png" alt="Fried Chicken Unlimited">
+                <div class="product-info">
+                    <p class="category">Chicken</p>
+                    <h4>Fried Chicken Unlimited</h4>
+                    <p class="price">PRICE: <span class="new-price">$49.00</span> <span class="old-price">$69.00</span></p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="discount-tag">-10%</div>
+                <img src="./images/promo-2.png" alt="Burger King Whopper">
+                <div class="product-info">
+                    <p class="category">Burger</p>
+                    <h4>Burger King Whopper</h4>
+                    <p class="price">PRICE: <span class="new-price">$29.00</span> <span class="old-price">$39.00</span></p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="discount-tag">-25%</div>
+                <img src="./images/promo-3.png" alt="White Castle Pizzas">
+                <div class="product-info">
+                    <p class="category">Pizza</p>
+                    <h4>White Castle Pizzas</h4>
+                    <p class="price">PRICE: <span class="new-price">$49.00</span> <span class="old-price">$69.00</span></p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section" id="cart">
+        <div class="container">
+            <h2 class="section-title">Your Cart</h2>
+            <div class="cart-items">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="total-label">Total</td>
+                            <td>$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="cart-actions">
+                <button class="proceed-checkout">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="shipping-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+        <div style="background:#fff; padding:20px; width:80%; height:80%; border-radius:10px; position:relative;">
+            <iframe src="shipping.html" style="width:100%; height:100%; border:none;"></iframe>
+            <button onclick="closeModal()" style="position:absolute; top:10px; right:10px; background:#ff8c00; color:#fff; padding:5px 10px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+        </div>
+        </div>
+
+    <script>
+        // Menu Filter Function
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+
+                const filter = e.target.textContent;
+                productCards.forEach(card => {
+                    if (filter === 'All' || card.querySelector('.category').textContent.includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Cart Functionality
+        let cart = [];
+        const cartTableBody = document.querySelector('.cart-table tbody');
+
+        document.querySelectorAll('.order-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const productCard = button.closest('.product-card');
+                const productName = productCard.querySelector('h4').textContent;
+                const productPrice = parseFloat(productCard.querySelector('.new-price').textContent.replace('$', ''));
+
+                const existingProduct = cart.find(item => item.name === productName);
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    cart.push({ name: productName, price: productPrice, quantity: 1 });
+                }
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            cartTableBody.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>
+                        <button class="quantity-decrease">-</button>
+                        ${item.quantity}
+                        <button class="quantity-increase">+</button>
+                    </td>
+                    <td>$${item.price.toFixed(2)}</td>
+                    <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                `;
+                total += item.price * item.quantity;
+                cartTableBody.appendChild(row);
+
+                // Quantity buttons functionality
+                row.querySelector('.quantity-decrease').addEventListener('click', () => {
+                    if (item.quantity > 1) item.quantity -= 1;
+                    else cart = cart.filter(cartItem => cartItem.name !== item.name);
+                    updateCart();
+                });
+
+                row.querySelector('.quantity-increase').addEventListener('click', () => {
+                    item.quantity += 1;
+                    updateCart();
+                });
+            });
+
+            document.querySelector('.total-label').textContent = `$${total.toFixed(2)}`;
+        }
+
+            document.querySelector(".proceed-checkout").addEventListener("click", function() {
+            document.getElementById("shipping-modal").style.display = "flex";
+            });
+
+            function closeModal() {
+                document.getElementById("shipping-modal").style.display = "none";
+            }
+
+
+            document.getElementById('shipping-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const address = document.getElementById('address').value;
+                alert(`Thank you, ${name}! Your order will be shipped to ${address}.`);
+                document.querySelector('.checkout-form').remove();
+            });
+
+    </script>
+</body>
+</html>
